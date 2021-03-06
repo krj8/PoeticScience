@@ -3,9 +3,9 @@ import './MenuButton.css';
 import { Link } from 'react-router-dom';
 
 
-const STYLES = ['btn--primary', 'btn--outline'];
+const STYLES = ['ddm--primary', 'ddm--outline'];
 
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ['ddm--medium', 'ddm--large'];
 
 export const MenuButton = ({
     children, 
@@ -21,9 +21,9 @@ export const MenuButton = ({
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
     return (
-        <Link to='/sign-up' className='btn-mobile'>
+        <Link to='/sign-up' className='ddm-mobile'>
             <button
-            className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+            className={`ddm ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}
             type={type}
             >
