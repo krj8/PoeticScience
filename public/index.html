@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link href="./src/App.css" rel="stylesheet">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -10,6 +11,13 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+    crossorigin="anonymous"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"> 
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,9 +32,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>PoeticScience</title>
   </head>
-  <body>
+  <body class="grid">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +47,37 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet"> 
+
+    <!-- <script>
+      function FrontCover(){
+        x = onclick
+      }
+    </script> -->
+
+        <!-- left_nav -->
+          <div class="left_nav_title" id="top_left_nav" input="button" onClick="FrontCover()">Front Cover</div>
+          <div class="left_nav_title" id="mid_left_nav">Ada Lovelace</div>
+          <div class="left_nav_title" id="bot_left_nav">About Me</div>
+
+        <!-- right_nav -->
+          <div class="right_nav_title" id="top_right_nav">Back Cover</div>
+          <div class="right_nav_title" id="mid_right_nav">Babbage <br>&<br> His Engines</div>
+          <div class="right_nav_title" id="bot_right_nav">Flyology</div>
+
+        <!-- left_content -->
+          <div class="left_content" id="top_left_content">Top-Left Content</div>
+          <div class="left_content" id="mid_left_content">Mid-Left Content</div>
+          <div class="left_content" id="bot_left_content">Bottom-Left Content</div>
+
+        <!-- left_image -->
+        <div id="left_image"></div>
+
+        <!-- right_content -->
+          <div class="right_content" id="top_right_content"><img src="Ada/Licensed Photos/vector.png" width="100" height="50">Top-Right Content</div>
+          <div class="right_content" id="mid_right_content">Mid-Right Content</div>
+          <div class="right_content" id="bot_right_content">Bottom-Right Content</div>
   </body>
 </html>
