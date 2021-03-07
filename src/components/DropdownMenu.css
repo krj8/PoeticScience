@@ -1,16 +1,14 @@
-* {
+/* * {
     box-sizing: border-box;
-  }
+  } */
 
 .menu-container {
     position: relative;
-  }
+}
 
 .menu {
-    background: #ffffff;
-    color: black;
-    border: 1px solid white;
-    border-radius: 2px;
+    background: black;
+    border-radius: 4px;
     position: absolute;
     top: 60px;
     right: 0;
@@ -22,25 +20,11 @@
     transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
   }
 
-/* .ddm--outline {
-        background-color: black;
-        color: white;
-        padding: 8px 20px;
-        border: 1px solid white;
-        transition: all 0.3s ease-out;
-   } */
-
   .menu.active {
     opacity: 1;
-    /* background: white;
-    color: black; */
     visibility: visible;
     transform: translateY(0);
-
-    background-color: black;
-    color: white;
-    padding: 8px 20px;
-    border: 1px solid white;
+    padding: 10px 10px;
     transition: all 0.3s ease-out;
   }
   
@@ -50,34 +34,41 @@
     margin: 0;
   }
   
-  .menu li {
+  .line {
     border-bottom: 1px solid #dddddd;
   }
   
   .menu li a {
     text-decoration: none;
-    color: #333333;
+    color: white;
     padding: 15px 20px;
     display: block;
   }
 
+  .menu li a:hover {
+    border-radius: 4px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px 5px white;
+  }
+
 .menu-trigger {
-    background: #ffffff;
-    border-radius: 2px;
+    background: transparent;
+    color: white;
+    /* font-size: 18px; */
+    border-radius: 4px;
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
+     /* justify-self: flex-end; */
     align-items: center;
     padding: 4px 6px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    border: none;
+    border: 1px solid white;
     vertical-align: middle;
     transition: box-shadow 0.4s ease;
-    margin-left: auto;
+    /* margin-left: auto; */
   }
   
   .menu-trigger:hover {
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 5px white;
   }
   
   .menu-trigger span {

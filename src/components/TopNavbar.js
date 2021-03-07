@@ -14,19 +14,18 @@ import './TopNavbar.css';
 import DropdownMenu from './DropdownMenu.jsx';
 import Logo from '/Users/kindrajonson/Desktop/PoeticScience/website_files/React/poetic_science/src/Licensed_Photos/logo.png';
 
-function TopNavbar() {
+export default function TopNavbar() {
     return (
         <nav className='navbar'>
             <div className='navbar-container'>
-                <Link to='/' className='navbar-logo'>
-                PoeticScience
-                    <img className='logo' src={Logo} alt='Ada Logo'/>
-                </Link>
-                <br />
-                <DropdownMenu buttonStyle='menu.active' />
+                <nav className='nav-menu'>
+                    <Link to='/' className='navbar-logo'>
+                    PoeticScience
+                        <img className='logo' src={Logo} alt='Ada Logo'/>
+                    </Link>
+                    <DropdownMenu/>
+                </nav>
             </div>
         </nav>
     );
 }
-
-export default TopNavbar;
