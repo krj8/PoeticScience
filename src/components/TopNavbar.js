@@ -23,9 +23,9 @@ export default function TopNavbar() {
                 </Link>
             </div>
             <div>
-                <Link to='/' className='navbar-logo'>
+                <div><Link to='/' className='navbar-title'>
                     PoeticScience.net
-                </Link>
+                </Link></div>
             </div>
             <div className='menu-button'>
                 <DropdownMenu />
