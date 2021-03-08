@@ -11,10 +11,7 @@ export default function DropdownMenu() {
         <div className="menu-container">
           <button onClick={onClick} className="menu-trigger">
             <span>About Me</span>
-            <img
-              src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/df/df7789f313571604c0e4fb82154f7ee93d9989c6.jpg"
-              alt="dropdownMenu"
-            />
+            <i class="fas fa-ghost"></i>
           </button>
           <nav
             ref={dropdownRef}
