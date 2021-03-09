@@ -17,16 +17,12 @@ import Logo from '/Users/kindrajonson/Desktop/PoeticScience/website_files/React/
 export default function TopNavbar() {
     return (
         <nav className='navbar'>
-            <div>
-                <Link to='/'>
-                    <img className='logo' src={Logo} alt='Ada Logo'/>
-                </Link>
-            </div>
-            <div>
-                <div><Link to='/' className='navbar-title'>
-                    PoeticScience.net
-                </Link></div>
-            </div>
+            <Link to='/'>
+                <img className='logo' src={Logo} alt='Ada Logo'/>
+            </Link>
+            <Link to='/' className='navbar-title'>
+                PoeticScience.net
+            </Link>
             <div className='menu-button'>
                 <DropdownMenu />
             </div>

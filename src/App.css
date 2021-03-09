@@ -40,25 +40,55 @@
 
 body {
   margin: 0;
-  background-color: blueviolet;
+  background-color: rgb(26, 26, 26);
 }
 
+.background_alignment {
+  display: flex;
+}
+
+/* .resize {
+  display: flexbox;
+  width: 100vw;
+  height: 100vh;
+} */
+
+/* .crutch_background {
+  width: 10px;
+  background-image: url('./Licensed_Photos/background_crutch3.jpg');
+} */
+
+
+
+
+
+
+/* ## Set height of bacground so all of pic can be seen## */
 .background {
-  margin: 8px;
+  margin: -20px -10px 0 0px;
   background-image: url('./Licensed_Photos/Empty_book.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  /* display: grid;
+  grid-area: book; */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed; */
   /* background-size: 100%; */
-  width: 1300px;
-  height: 300px;
+  /* width: 1300px;
+  height: 300px; */
   
   
   /* display: grid;
   grid-area: body; */
 }
 
-/* .grid {
-  height: 100vh;
+.grid {
+  /* grid-template-columns: 1fr 1fr; */
+  /* column-gap: 250px; */
+  /* grid-template-rows: 1fr; */
+  /* grid-template-areas: " crutch book "; */
+  /* height: 100vh;
   width: 100%; */
   /* display: grid; */
   /* grid-template-columns: .2fr .2fr .2fr .2fr .2fr 3fr 3fr .2fr .2fr .2fr .2fr .2fr .2fr;
@@ -69,7 +99,7 @@ body {
       "tnb tnb tnb"
       "body body body"
       "body body body "; */
-/* } */
+}
 
 /* .topnb {
   grid-area: tnb;
