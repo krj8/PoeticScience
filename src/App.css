@@ -1,4 +1,4 @@
-@import "./components/TopNavbar.css";
+/* @import "./components/TopNavbar.css"; */
 /* @import "./components/LeftNavbar.css"; */
 
 * {
@@ -39,30 +39,41 @@
 /* comment out Command-/ */
 
 body {
+  margin: 0;
+  background-color: blueviolet;
+}
+
+.background {
+  margin: 8px;
   background-image: url('./Licensed_Photos/Empty_book.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
-  margin: 0;
+  /* background-size: 100%; */
+  width: 1300px;
+  height: 300px;
+  
+  
+  /* display: grid;
+  grid-area: body; */
 }
 
-.grid {
+/* .grid {
   height: 100vh;
-  width: 100%;
-  display: grid;
+  width: 100%; */
+  /* display: grid; */
   /* grid-template-columns: .2fr .2fr .2fr .2fr .2fr 3fr 3fr .2fr .2fr .2fr .2fr .2fr .2fr;
   grid-template-rows: .2fr 1fr 1fr 1fr .2fr .2fr; */
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 80px 80px 80px;
   grid-template-areas:
-      " tnb tnb tnb "
-      " . . . "
-      ". . . ";
-}
+      "tnb tnb tnb"
+      "body body body"
+      "body body body "; */
+/* } */
 
-.topnb {
+/* .topnb {
   grid-area: tnb;
-}
+} */
 
 
 
