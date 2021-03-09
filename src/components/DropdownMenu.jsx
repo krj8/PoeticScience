@@ -18,9 +18,10 @@ export default function DropdownMenu() {
             className={`menu ${isActive ? "active" : "inactive"}`}
           >
             <ul>
-              <li className='line'>
+              <li>
                 <a href="/portfolio">Portfolio</a>
               </li>
+              <div className='line'></div>
               <li>
                 <a href="/resume">Resume</a>
               </li>

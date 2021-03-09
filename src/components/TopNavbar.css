@@ -3,6 +3,7 @@
     height: 80px;
     width: auto;
     display: grid;
+    grid-area: tnb;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 80px 80px;
     grid-template-areas: 

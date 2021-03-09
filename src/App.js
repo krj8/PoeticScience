@@ -8,13 +8,12 @@ function App() {
   return (
     <>
       <Router>
-        {/* <Navbar /> */}
-        <TopNavbar />
-        {/* <LeftNavbar /> */}
-        {/* <RightNavbar /> */}
-        <Switch>
-          <Route path='/' exact />
-        </Switch>
+          <TopNavbar/>
+          {/* <LeftNavbar /> */}
+          {/* <RightNavbar /> */}
+          <Switch>
+            <Route path='/' exact />
+          </Switch>
       </Router>
     </>
   );

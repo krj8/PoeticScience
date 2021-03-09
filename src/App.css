@@ -1,3 +1,6 @@
+@import "./components/TopNavbar.css";
+/* @import "./components/LeftNavbar.css"; */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +8,7 @@
   font-family: 'PT Sans', sans-serif;
 }
 
-.ada,
+/* .ada,
 .babbage,
 .about-me {
   display: flex;
@@ -16,7 +19,6 @@
 }
 
 .babbage {
-  /* background-image: url('/images/img-2.jpg'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,13 +27,12 @@
 }
 
 .about-me {
-  /* background-image: url('/images/img-8.jpg'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
 
 /* ------------------------------------------------------------------------------------ */
 
@@ -45,7 +46,23 @@ body {
   margin: 0;
 }
 
+.grid {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: .2fr .2fr .2fr .2fr .2fr 3fr 3fr .2fr .2fr .2fr .2fr .2fr .2fr;
+  grid-template-rows: .2fr 1fr 1fr 1fr .2fr .2fr; */
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+      " tnb tnb tnb "
+      " . . . "
+      ". . . ";
+}
 
+.topnb {
+  grid-area: tnb;
+}
 
 
 
