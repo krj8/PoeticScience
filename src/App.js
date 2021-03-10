@@ -1,8 +1,10 @@
 import React from 'react';
-import TopNavbar from './components/TopNavbar'
+import TopNavbar from './components/TopNavbar';
+// import Contents from './components/Contents.js';
+import LeftMenu from './components/LeftMenu.jsx';
+import RightMenu from './components/RightMenu.jsx';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-// import background_crutch from './Licensed_Photos/background_crutch.jpg';
 
 function App() {
   return (
@@ -10,20 +12,18 @@ function App() {
       <Router>
         <TopNavbar/>
           <body>
-            {/* <div className='resize'> */}
-            {/* <div className='background_alignment'> */}
-              {/* <div className="crutch_background"></div> */}
-              {/* <img src={background_crutch} alt="this is car image" /> */}
               <div className="background">
-                  
-                  {/* <LeftNavbar /> */}
-                  {/* <RightNavbar /> */}
+                  {/* <Contents /> */}
+                  <div className='leftMenu'>
+                    <LeftMenu />
+                  </div>
+                  <div className='rightMenu'>
+                    <RightMenu />
+                  </div>
                   <Switch>
                     <Route path='/' exact />
                   </Switch>
                 </div>
-                {/* </div> */}
-                {/* </div> */}
             </body>
       </Router>
     </>

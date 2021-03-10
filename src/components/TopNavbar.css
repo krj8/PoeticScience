@@ -9,7 +9,7 @@
     grid-template-areas: 
         "logo title menu"
         "logo . .";
-    position: sticky;
+    /* position: sticky; */
   }
 
   .navbar-title {
@@ -27,8 +27,6 @@
     display: flex;
     grid-area: logo;
     padding: 0 0 0 20px;
-    /* width: 10.5vw; */
-    /* height: auto; */
     }
 
   .menu-button {

@@ -11,7 +11,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './TopNavbar.css';
-import DropdownMenu from './DropdownMenu.jsx';
+import TopMenu from './TopMenu.jsx';
 import Logo from '/Users/kindrajonson/Desktop/PoeticScience/website_files/React/poetic_science/src/Licensed_Photos/logo.png';
 
 export default function TopNavbar() {
@@ -24,7 +24,7 @@ export default function TopNavbar() {
                 PoeticScience.net
             </Link>
             <div className='menu-button'>
-                <DropdownMenu />
+                <TopMenu />
             </div>
         </nav>
     );

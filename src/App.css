@@ -1,5 +1,4 @@
-/* @import "./components/TopNavbar.css"; */
-/* @import "./components/LeftNavbar.css"; */
+/* ToDo: Set mobile version when screen size is smaller than _____ */
 
 * {
   box-sizing: border-box;
@@ -44,73 +43,29 @@ body {
   overflow: hidden;
 }
 
-/* .background_alignment {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-} */
-
-/* .resize {
-  display: flexbox;
-  width: 100vw;
-  height: 100vh;
-} */
-
-/* .crutch_background {
-  width: 10px;
-  background-image: url('./Licensed_Photos/background_crutch3.jpg');
-} */
-
-
-
-
-
-
-/* ## Set height of background so all of pic can be seen## */
 .background {
   height: 100vh;
   width: 100vw;
-  background-color: purple;
-  /* margin: -15px 0; */
   background-image: url('./Licensed_Photos/Empty_book.jpg');
-  /* background-size: cover; */
-  /* background-position: center; */
   background-size: 100vw 90vh;
-  
-  /* display: grid;
-  grid-area: book; */
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  /* background-size: 100%; */
-  /* width: 1300px;
-  height: 300px; */
-  
-  
-  /* display: grid;
-  grid-area: body; */
+
+  display: grid;
+  grid-template-columns: .25fr 2fr 2fr .1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  " . . . . . . . "
+  " leftMenu . . . . . rightMenu ";
 }
 
-.grid {
-  /* grid-template-columns: 1fr 1fr; */
-  /* column-gap: 250px; */
-  /* grid-template-rows: 1fr; */
-  /* grid-template-areas: " crutch book "; */
-  /* height: 100vh;
-  width: 100%; */
-  /* display: grid; */
-  /* grid-template-columns: .2fr .2fr .2fr .2fr .2fr 3fr 3fr .2fr .2fr .2fr .2fr .2fr .2fr;
-  grid-template-rows: .2fr 1fr 1fr 1fr .2fr .2fr; */
-  /* grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 80px 80px 80px;
-  grid-template-areas:
-      "tnb tnb tnb"
-      "body body body"
-      "body body body "; */
+.leftMenu {
+  grid-area: leftMenu;
 }
 
-/* .topnb {
-  grid-area: tnb;
-} */
+.rightMenu {
+  grid-area: rightMenu;
+}
+/* ----------------------------------------------------------- */
 
 
 
