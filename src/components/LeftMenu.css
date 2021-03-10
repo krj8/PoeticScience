@@ -1,5 +1,8 @@
 .left-menu-container {
   position: relative;
+  /* background-image: url('../Licensed_Photos/vector.jpg'); */
+/* height: 100vh; */
+/* width: 100vw; */
 }
 
 .left-menu {
@@ -55,8 +58,8 @@
 
 .left-menu-trigger {
       text-decoration: none;
+      /* background-image: url('../Licensed_Photos/vector.jpg'); */
       /* background-color: transparent; */
-      background-image: url('/src/Licensed_Photos/vector.jpg');
       color: white;
       border-radius: 4px;
       cursor: pointer;
@@ -66,7 +69,6 @@
       border: 1px solid #dddddd;
       outline: none;
       transition: box-shadow 0.4s ease;    
-
     }
   
   .left-menu-trigger:hover {
@@ -79,6 +81,9 @@
       margin: 0 10px;
     }
   
+    /* .ribbon {
+      background-image: url('../Licensed_Photos/vector.jpg');
+    } */
   /* .left-menu-trigger img {
       border-radius: 90px;
     } */
