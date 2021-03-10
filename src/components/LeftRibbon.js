@@ -1,10 +1,11 @@
-import './LeftRibbon.css';
+// import './LeftRibbon.css';
 
-export default function LeftRibbon() {
+// export default function LeftRibbon() {
 
-  return (
-      <p class="left-ribbon">
-        <span class="left-text">Previous Chapters</span>
-      </p>
-  );
-}
+//   return (
+//       <p class="left-ribbon">
+//         {/* <span class="left-text"> . </span> */}
+//         <span class="left-text" />
+//       </p>
+//   );
+// }

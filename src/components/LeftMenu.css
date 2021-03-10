@@ -1,16 +1,16 @@
 .left-menu-container {
   position: relative;
+  /* display: flexbox; */
   /* background-image: url('../Licensed_Photos/vector.jpg'); */
 /* height: 100vh; */
 /* width: 100vw; */
 }
 
 .left-menu {
-  background: transparent;
   border-radius: 4px;
   position: relative;
-  /* top: 0px; */
-  /* right: 0; */
+  top: 0px;
+  right: 0;
   width: 200px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   opacity: 0;
@@ -57,18 +57,29 @@
 }
 
 .left-menu-trigger {
-      text-decoration: none;
-      /* background-image: url('../Licensed_Photos/vector.jpg'); */
-      /* background-color: transparent; */
-      color: white;
+      /* text-decoration: none;
+      background-color: #FFD72A;
+      color: black;
       border-radius: 4px;
       cursor: pointer;
       display: flex;
       align-items: center;
-      /* padding: 4px 6px; */
       border: 1px solid #dddddd;
       outline: none;
       transition: box-shadow 0.4s ease;    
+      z-index: 2; */
+
+      color: black;
+      cursor: pointer;
+      /* display: flex; */
+      display: inline-block;
+      padding: 0.5em 1em;
+      min-width: 15em;
+      height: 34.5px;
+      color: #FFD72A;
+      background: #FFD72A;
+      position: relative;
+      z-index: 1;
     }
   
   .left-menu-trigger:hover {
@@ -87,3 +98,56 @@
   /* .left-menu-trigger img {
       border-radius: 90px;
     } */
+
+
+
+
+
+
+
+
+    .left-ribbon {
+      position: relative;
+      display: inline-block;
+      margin: 5em;
+      text-align: center;
+    }
+  
+    /* .left-text { */
+      /* display: inline-block;
+      padding: 0.5em 1em;
+      min-width: 15em;
+      height: 34.5px;
+      color: #FFD72A;
+      background: #FFD72A;
+      position: relative;
+      z-index: 1; */
+    /* } */
+  
+    .left-ribbon:after, .left-ribbon:before,
+    .left-text:before, .left-text:after,
+    .left-bold:before {
+      content: '';
+      position: absolute;
+      border-style: solid;
+    }
+  
+    .left-text:before {
+      bottom: 100%; left: 0;
+      border-width: .5em .7em 0 0;
+      border-color: transparent #FC9544 transparent transparent;
+    }
+  
+    .left-text:after {
+      top: 100%; right: 0;
+      border-width: .5em 2em 0 0;
+      border-color: #FC9544 transparent transparent transparent;
+      z-index: 1;
+    }
+  
+    .left-ribbon:after {
+      top: .5em; right: -2em;
+      border-width: 1.1em 1em 1.1em 3em;
+      border-color: #FECC30 transparent #FECC30 #FECC30;
+      z-index: 0;
+    }

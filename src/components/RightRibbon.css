@@ -9,7 +9,9 @@
   display: inline-block;
   padding: 0.5em 1em;
   min-width: 15em;
-  line-height: 1.2em;
+  /* line-height: 1.2em; */
+  height: 34.5px;
+  color: #FFD72A;
   background: #FFD72A;
   position: relative;
   z-index: 1;

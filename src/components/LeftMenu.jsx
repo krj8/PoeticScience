@@ -1,20 +1,27 @@
 import React, { useRef } from 'react';
 import './LeftMenu.css';
-import LeftRibbon from './LeftRibbon.js';
 import { useDetectOutsideClick } from './useDetectOutsideClick.js';
 
 export default function LeftMenu() {
   const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
   const onClick = () => setIsActive(!isActive);
+
   return (
-        <div className="left-menu-container">
-          {/* <button onClick={onClick} className="left-menu-trigger">
-            {/* <image className='ribbon' /> */}
-            {/* <span>Previous Chapters</span>
-          </button> */}
-          <LeftRibbon onClick={onClick} className="left-menu-trigger">
-        </LeftRibbon>
+          // <div className="left-menu-container">
+          //   <div className='left-ribbon'>
+          //     <button onClick={onClick} className="left-trigger">
+          //       <span>Previous Chapters</span>
+          //     </button>
+          //   </div>
+
+          <div className="left-menu-container">
+            <div onClick={onClick} className='left-ribbon'>
+              <div className='left-menu-trigger'>
+                <span className='left-text'>Previous Chapters</span>
+              </div>
+            </div>
+          
           <nav
             ref={dropdownRef}
             className={`left-menu ${isActive ? "active" : "inactive"}`}
