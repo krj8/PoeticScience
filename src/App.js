@@ -11,7 +11,7 @@ function App() {
         <TopNavbar/>
           <body>
             {/* <div className='resize'> */}
-            <div className='background_alignment'>
+            {/* <div className='background_alignment'> */}
               {/* <div className="crutch_background"></div> */}
               {/* <img src={background_crutch} alt="this is car image" /> */}
               <div className="background">
@@ -22,7 +22,7 @@ function App() {
                     <Route path='/' exact />
                   </Switch>
                 </div>
-                </div>
+                {/* </div> */}
                 {/* </div> */}
             </body>
       </Router>
