@@ -1,5 +1,6 @@
 {
   "name": "poetic_science",
+  "homepage": "https://www.poeticscience.net/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

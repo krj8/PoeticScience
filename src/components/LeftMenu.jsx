@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import './LeftMenu.css';
-import Ribbon from './Ribbon.js';
+import LeftRibbon from './LeftRibbon.js';
 import { useDetectOutsideClick } from './useDetectOutsideClick.js';
 
 export default function LeftMenu() {
@@ -13,8 +13,8 @@ export default function LeftMenu() {
             {/* <image className='ribbon' /> */}
             {/* <span>Previous Chapters</span>
           </button> */}
-          <Ribbon onClick={onClick} className="left-menu-trigger">
-        </Ribbon>
+          <LeftRibbon onClick={onClick} className="left-menu-trigger">
+        </LeftRibbon>
           <nav
             ref={dropdownRef}
             className={`left-menu ${isActive ? "active" : "inactive"}`}

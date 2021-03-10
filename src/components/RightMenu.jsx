@@ -1,5 +1,12 @@
+// ToDo: Turn around/mirror 'Next Chapters' right menu
+// Make Previous & Next Chapters menus work
+// Attach ChapterMenus to page, so move correctly when window is resized
+
+
+
 import React, { useRef } from 'react';
 import './RightMenu.css';
+import RightRibbon from './RightRibbon.js';
 import { useDetectOutsideClick } from './useDetectOutsideClick.js';
 
 export default function RightMenu() {
@@ -8,9 +15,11 @@ export default function RightMenu() {
   const onClick = () => setIsActive(!isActive);
   return (
         <div className="right-menu-container">
-          <button onClick={onClick} className="left-menu-trigger">
+          {/* <button onClick={onClick} className="left-menu-trigger">
             <span>Next Chapters</span>
-          </button>
+          </button> */}
+          <RightRibbon onClick={onClick} className="left-menu-trigger">
+        </RightRibbon>
           <nav
             ref={dropdownRef}
             className={`right-menu ${isActive ? "active" : "inactive"}`}
