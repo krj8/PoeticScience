@@ -1,15 +1,17 @@
+/* dropdown menu + trigger */
 .right-menu-container {
     position: relative;
   }
 
+  /* Right dropdown menu when opened */
   .right-menu {
-    background: transparent;
+    /* background: transparent; */
     border-radius: 4px;
     position: relative;
     top: 50px;
     right: 0;
-    width: 200px;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    width: 180px;
+    /* box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3); */
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
@@ -17,14 +19,16 @@
   }
   
   .right-menu.active {
+    background-color: rgba(254,204,48, .75);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-    padding: 10px 20px;
+    padding: 2px 0;
     transition: all 0.3s ease-out;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
   
   .right-menu ul {
@@ -32,27 +36,28 @@
   }
   
   .right-line {
-    border-bottom: 1px solid #dddddd;
-    margin: 0 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 0px 15px 2px;
   }
   
   .right-menu li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1rem;
-    font-weight: 700;
-    padding: 15px 110px;
-    display: block;
+    font-weight: 500;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .right-menu li a:hover {
     border-radius: 4px;
-    border: 1px solid #dddddd;
-    box-shadow: 0 0 10px 5px white;
+    box-shadow: 0 0 10px 3px black;
   }
   
   .right-menu-trigger {
-        text-decoration: none;
+        /* text-decoration: none;
         background-color: transparent;
         color: white;
         border-radius: 4px;
@@ -62,12 +67,22 @@
         padding: 4px 6px;
         border: 1px solid #dddddd;
         outline: none;
-        transition: box-shadow 0.4s ease;    
+        transition: box-shadow 0.4s ease;     */
   
+        cursor: pointer;
+        display: inline-block;
+        padding: 0.5em 1em;
+        min-width: 15em;
+        height: 34.5px;
+        color: #FFD72A;
+        background: #FFD72A;
+        position: relative;
+        transition: box-shadow 0.4s ease; 
+        z-index: 1;
       }
     
     .right-menu-trigger:hover {
-        box-shadow: 0 0 10px 5px white;
+      box-shadow: 0 0 10px 3px black;
       }
     
     .right-menu-trigger span {
@@ -75,7 +90,76 @@
         font-size: 1rem;
         margin: 0 10px;
       }
-    
-    /* .right-menu-trigger img {
-        border-radius: 90px;
+  
+.right-ribbon {
+        position: relative;
+        display: inline-block;
+        margin: 5em;
+        text-align: center;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+      }
+      
+      .right-text {
+        /* display: inline-block; */
+        /* padding: 0.5em 1em; */
+        /* min-width: 15em; */
+        /* line-height: 1.2em; */
+        /* height: 34.5px;
+        color: #FFD72A;
+        background: #FFD72A;
+        position: relative;
+        z-index: 1; */
+        color: black;
+        text-align: center;
+      }
+      
+      .right-ribbon:after, .right-ribbon:before,
+      .right-text:before, .right-text:after,
+      .right-bold:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        z-index: 0;
+      }
+      
+      /* .ribbon:before {
+        top: 0.3em; left: 0.2em;
+        width: 100%; height: 100%;
+        border: none;
+        background:#EBECED;
+        z-index: -2;
       } */
+      
+      .right-text:before {
+        top: 100%; left: 0;
+        border-width: .5em 0 0 2em;
+        border-color: #FC9544 transparent transparent transparent;
+        z-index: 1;
+      }
+      
+      .right-text:after {
+        bottom: 100%; right: 0;
+        border-width: .5em 0  0 .7em ;
+        border-color:   transparent transparent transparent #FC9544;
+      }
+      
+      /* .ribbon:after, .bold:before {
+        top: 0.5em; right: -2em;
+        border-width: 1.1em 1em 1.1em 3em;
+        border-color: #FECC30 transparent #FECC30 #FECC30;
+        z-index: -1;
+      } */
+      
+      .right-ribbon:after {
+        top: .5em; left: -2em;
+        border-width: 1.1em 3em 1.1em 1em;
+        border-color: #FECC30 #FECC30 #FECC30 transparent;
+        z-index: 0;
+      }
+      
+      /* .bold:before {
+        border-color: #EBECED transparent #EBECED #EBECED;
+        top: 0.7em;
+        right: -2.3em;
+      } */
+      

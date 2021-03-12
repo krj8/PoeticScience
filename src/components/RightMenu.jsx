@@ -14,12 +14,13 @@ export default function RightMenu() {
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
   const onClick = () => setIsActive(!isActive);
   return (
-        <div className="right-menu-container">
-          {/* <button onClick={onClick} className="left-menu-trigger">
-            <span>Next Chapters</span>
-          </button> */}
-          <RightRibbon onClick={onClick} className="left-menu-trigger">
-        </RightRibbon>
+          <div className="right-menu-container">
+            <div onClick={onClick} className='right-ribbon'>
+              <div className='right-menu-trigger'>
+                <span className='right-text'>Next Chapters</span>
+              </div>
+            </div>
+
           <nav
             ref={dropdownRef}
             className={`right-menu ${isActive ? "active" : "inactive"}`}

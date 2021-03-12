@@ -1,143 +1,137 @@
+/* dropdown menu + trigger */
 .left-menu-container {
   position: relative;
-  /* position: absolute; */
-  /* display: flexbox; */
-  /* background-image: url('../Licensed_Photos/vector.jpg'); */
-/* height: 100vh; */
-/* width: 100vw; */
 }
 
-.left-menu {
-  border-radius: 4px;
-  position: relative;
-  top: 0px;
-  right: 0;
-  width: 200px;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
-}
+  /* Left dropdown menu when opened */
+  .left-menu {
+    border-radius: 4px;
+    position: relative;
+    top: -80px;
+    left: 100px;
+    width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  }
 
-.left-menu.active {
-  /* opacity: 1; */
-  background-color: black;
-  opacity: 0.5;
-  visibility: visible;
-  transform: translateY(0);
-  /* padding: 10px 0px; */
-  transition: all 0.3s ease-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .left-menu.active {
+    background-color: rgba(254,204,48, .75);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    padding: 2px 0;
+    transition: all 0.3s ease-out;
+  }
 
-.left-menu ul {
-  list-style: none;
-}
+  .left-menu ul {
+    list-style: none;
+  }
 
-.left-line {
-  border-bottom: 1px solid #dddddd;
-  margin: 0 15px;
-}
+  .left-line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 0px 15px 2px;
+  }
 
-.left-menu li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 15px 60px;
-  display: block;
-}
+  .left-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.left-menu li a:hover {
-  border-radius: 4px;
-  border: 1px solid red;
-  box-shadow: 0 0 10px 5px red;
-}
+  .left-menu li a:hover {
+    border-radius: 4px;
+    box-shadow: 0 0 10px 3px black;
+  }
 
-.left-menu-trigger {
-      /* text-decoration: none;
-      background-color: #FFD72A;
-      color: black;
-      align-items: center;
-      border: 1px solid #dddddd;
-      outline: none;
-      transition: box-shadow 0.4s ease;    
-      z-index: 2; */
+  .left-menu-trigger {
+        /* text-decoration: none;
+        background-color: #FFD72A;
+        color: black;
+        align-items: center;
+        border: 1px solid #dddddd;
+        outline: none;
+        transition: box-shadow 0.4s ease;    
+        z-index: 2; */
 
-      
-      cursor: pointer;
-      /* display: flex; */
-      display: inline-block;
-      padding: 0.5em 1em;
-      min-width: 15em;
-      height: 34.5px;
-      color: #FFD72A;
-      background: #FFD72A;
-      position: relative;
-      transition: box-shadow 0.4s ease; 
-      z-index: 1;
-    }
-  
-  .left-menu-trigger:hover {
-      box-shadow: 0 0 10px 5px white;
-    }
-  
-  .left-menu-trigger span {
-      font-weight: 700;
-      font-size: 1rem;
-      margin: 0 10px;
-    }
-  
+        
+        cursor: pointer;
+        display: inline-block;
+        padding: 0.5em 1em;
+        min-width: 15em;
+        height: 34.5px;
+        color: #FFD72A;
+        background: #FFD72A;
+        position: relative;
+        transition: box-shadow 0.4s ease; 
+        z-index: 1;
+      }
+    
+    .left-menu-trigger:hover {
+        box-shadow: 0 0 10px 3px black;
+      }
+    
+    .left-menu-trigger span {
+        font-weight: 700;
+        font-size: 1rem;
+        margin: 0 10px;
+      }
+    
 
 
 
 
-    .left-ribbon {
-      position: relative;
-      display: inline-block;
-      margin: 5em;
-      text-align: center;
-    }
-  
-    .left-text {
-      color: black;
-      text-align: center;
-      /* display: inline-block;
-      padding: 0.5em 1em;
-      min-width: 15em;
-      height: 34.5px;
-      background: #FFD72A;
-      position: relative;
-      z-index: 1; */
-    }
-  
-    .left-ribbon:after, .left-ribbon:before,
-    .left-text:before, .left-text:after,
-    .left-bold:before {
-      content: '';
-      position: absolute;
-      border-style: solid;
-    }
-  
-    .left-text:before {
-      bottom: 100%; left: 0;
-      border-width: .5em .7em 0 0;
-      border-color: transparent #FC9544 transparent transparent;
-    }
-  
-    .left-text:after {
-      top: 100%; right: 0;
-      border-width: .5em 2em 0 0;
-      border-color: #FC9544 transparent transparent transparent;
-      z-index: 1;
-    }
-  
-    .left-ribbon:after {
-      top: .5em; right: -2em;
-      border-width: 1.1em 1em 1.1em 3em;
-      border-color: #FECC30 transparent #FECC30 #FECC30;
-      z-index: 0;
-    }
+      .left-ribbon {
+        position: relative;
+        display: inline-block;
+        margin: 5em;
+        text-align: center;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+        /* z-index: 1; */
+      }
+    
+      .left-text {
+        color: black;
+        text-align: center;
+        /* display: inline-block;
+        padding: 0.5em 1em;
+        min-width: 15em;
+        height: 34.5px;
+        background: #FFD72A;
+        position: relative;
+        z-index: 1; */
+      }
+    
+      .left-ribbon:after, .left-ribbon:before,
+      .left-text:before, .left-text:after,
+      .left-bold:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        z-index: 0;
+      }
+    
+      .left-text:before {
+        bottom: 100%; left: 0;
+        border-width: .5em .7em 0 0;
+        border-color: transparent #FC9544 transparent transparent;
+      }
+    
+      .left-text:after {
+        top: 100%; right: 0;
+        border-width: .5em 2em 0 0;
+        border-color: #FC9544 transparent transparent transparent;
+      }
+    
+      .left-ribbon:after {
+        top: .5em; right: -2em;
+        border-width: 1.1em 1em 1.1em 3em;
+        border-color: #FECC30 transparent #FECC30 #FECC30;
+      }
