@@ -3,15 +3,25 @@
     position: relative;
   }
 
+  /* .right-menu-container:after { */
+    /* content: '';
+    position: absolute;
+    width: 240px;
+    height: 34px;
+    right: 80px;
+    bottom: 183px;
+    z-index: 2;
+    box-shadow: 0 0 10px 3px black; */
+  /* } */
+
   /* Right dropdown menu when opened */
   .right-menu {
     /* background: transparent; */
     border-radius: 4px;
     position: relative;
-    top: 50px;
-    right: 0;
-    width: 180px;
-    /* box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3); */
+    top: -80px;
+    right: -120px;
+    width: 160px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
@@ -26,9 +36,6 @@
     transform: translateY(0);
     padding: 2px 0;
     transition: all 0.3s ease-out;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
   }
   
   .right-menu ul {
@@ -45,7 +52,7 @@
     color: black;
     font-size: 1rem;
     font-weight: 500;
-    padding: 15px 50px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,22 +60,10 @@
   
   .right-menu li a:hover {
     border-radius: 4px;
-    box-shadow: 0 0 10px 3px black;
+    /* box-shadow: 0 0 10px 3px black; */
   }
   
-  .right-menu-trigger {
-        /* text-decoration: none;
-        background-color: transparent;
-        color: white;
-        border-radius: 4px;
-        cursor: crosshair;
-        display: flex;
-        align-items: center;
-        padding: 4px 6px;
-        border: 1px solid #dddddd;
-        outline: none;
-        transition: box-shadow 0.4s ease;     */
-  
+  .right-menu-trigger {  
         cursor: pointer;
         display: inline-block;
         padding: 0.5em 1em;
@@ -79,10 +74,16 @@
         position: relative;
         transition: box-shadow 0.4s ease; 
         z-index: 1;
+        /* box-shadow: 0 0 10px 3px black; */
+        /* position: absolute; */
+        /* box-shadow:inset 0 0 10px 0px blue; */
       }
     
+      /* why doesn't box-shadow include orange triangles? */
     .right-menu-trigger:hover {
-      box-shadow: 0 0 10px 3px black;
+      /* box-shadow: 0 0 10px 3px black;
+      z-index: 3;
+      position: relative */
       }
     
     .right-menu-trigger span {
@@ -100,19 +101,15 @@
       }
       
       .right-text {
-        /* display: inline-block; */
-        /* padding: 0.5em 1em; */
-        /* min-width: 15em; */
-        /* line-height: 1.2em; */
-        /* height: 34.5px;
-        color: #FFD72A;
-        background: #FFD72A;
-        position: relative;
-        z-index: 1; */
         color: black;
         text-align: center;
-      }
-      
+      /* }
+
+    .right-text:hover { */
+      /* box-shadow: 0 0 10px 3px black;
+      padding: 7px 80px; */
+    }
+
       .right-ribbon:after, .right-ribbon:before,
       .right-text:before, .right-text:after,
       .right-bold:before {
@@ -121,15 +118,7 @@
         border-style: solid;
         z-index: 0;
       }
-      
-      /* .ribbon:before {
-        top: 0.3em; left: 0.2em;
-        width: 100%; height: 100%;
-        border: none;
-        background:#EBECED;
-        z-index: -2;
-      } */
-      
+
       .right-text:before {
         top: 100%; left: 0;
         border-width: .5em 0 0 2em;
@@ -139,27 +128,19 @@
       
       .right-text:after {
         bottom: 100%; right: 0;
-        border-width: .5em 0  0 .7em ;
-        border-color:   transparent transparent transparent #FC9544;
+        border-width: .5em 0 0 .7em;
+        border-color: transparent transparent transparent #FC9544;
+        /* border-color: green;
+        border-style: .5px bottom; */
       }
-      
-      /* .ribbon:after, .bold:before {
-        top: 0.5em; right: -2em;
-        border-width: 1.1em 1em 1.1em 3em;
-        border-color: #FECC30 transparent #FECC30 #FECC30;
-        z-index: -1;
+
+      /* .right-text:hover {
+        border: 1px solid blue;
       } */
-      
+
       .right-ribbon:after {
         top: .5em; left: -2em;
         border-width: 1.1em 3em 1.1em 1em;
         border-color: #FECC30 #FECC30 #FECC30 transparent;
-        z-index: 0;
+
       }
-      
-      /* .bold:before {
-        border-color: #EBECED transparent #EBECED #EBECED;
-        top: 0.7em;
-        right: -2.3em;
-      } */
-      

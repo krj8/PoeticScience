@@ -6,15 +6,17 @@
 
 import React, { useRef } from 'react';
 import './RightMenu.css';
-import RightRibbon from './RightRibbon.js';
+// import RightRibbon from './RightRibbon.js';
 import { useDetectOutsideClick } from './useDetectOutsideClick.js';
 
 export default function RightMenu() {
   const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
   const onClick = () => setIsActive(!isActive);
+  const ribbonShadow = setIsShown();
+
   return (
-          <div className="right-menu-container">
+          <div onHover={ribbonShadow} className="right-menu-container">
             <div onClick={onClick} className='right-ribbon'>
               <div className='right-menu-trigger'>
                 <span className='right-text'>Next Chapters</span>

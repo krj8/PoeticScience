@@ -8,8 +8,8 @@
     border-radius: 4px;
     position: relative;
     top: -80px;
-    left: 100px;
-    width: 180px;
+    left: 113px;
+    width: 160px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
@@ -40,7 +40,7 @@
     color: black;
     font-size: 1rem;
     font-weight: 500;
-    padding: 15px 50px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,17 +51,7 @@
     box-shadow: 0 0 10px 3px black;
   }
 
-  .left-menu-trigger {
-        /* text-decoration: none;
-        background-color: #FFD72A;
-        color: black;
-        align-items: center;
-        border: 1px solid #dddddd;
-        outline: none;
-        transition: box-shadow 0.4s ease;    
-        z-index: 2; */
-
-        
+  .left-menu-trigger {       
         cursor: pointer;
         display: inline-block;
         padding: 0.5em 1em;
@@ -84,29 +74,17 @@
         margin: 0 10px;
       }
     
-
-
-
-
-      .left-ribbon {
+.left-ribbon {
         position: relative;
         display: inline-block;
         margin: 5em;
         text-align: center;
         box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-        /* z-index: 1; */
       }
     
       .left-text {
         color: black;
         text-align: center;
-        /* display: inline-block;
-        padding: 0.5em 1em;
-        min-width: 15em;
-        height: 34.5px;
-        background: #FFD72A;
-        position: relative;
-        z-index: 1; */
       }
     
       .left-ribbon:after, .left-ribbon:before,

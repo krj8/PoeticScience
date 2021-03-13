@@ -1,10 +1,10 @@
-import './RightRibbon.css';
+// import './RightRibbon.css';
 
-export default function RightRibbon() {
+// export default function RightRibbon() {
 
-  return (
-      <p class="right-ribbon">
-        <span class="right-text" />
-      </p>
-  );
-}
+//   return (
+//       <p class="right-ribbon">
+//         <span class="right-text" />
+//       </p>
+//   );
+// }
