@@ -1,11 +1,9 @@
 /* dropdown menu + trigger */
 .left-menu-container {
   position: relative;
-  /* border: 1px solid green; */
   margin-top: -72px;
   margin-right: -48px;
   margin-left: -6px;
-  /* margin-right: */
 }
 
   /* Left dropdown menu when opened */

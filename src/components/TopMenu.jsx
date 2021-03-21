@@ -14,7 +14,7 @@ export default function TopMenu() {
         <div className="menu-container">
           <button onClick={onClick} className="menu-trigger">
             <span>About Me</span>
-            <img src={Self} />
+            <img src={Self} alt='selfie'/>
           </button>
           <nav
             ref={dropdownRef}
