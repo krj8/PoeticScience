@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import './TopMenu.css';
 import { useDetectOutsideClick } from './useDetectOutsideClick.js';
+import Self from '/Users/kindrajonson/Desktop/PoeticScience/website_files/React/poetic_science/src/Licensed_Photos/123.jpg';
 
 export default function TopMenu() {
   const dropdownRef = useRef(null);
@@ -13,7 +14,7 @@ export default function TopMenu() {
         <div className="menu-container">
           <button onClick={onClick} className="menu-trigger">
             <span>About Me</span>
-            <i class="fas fa-ghost"></i>
+            <img src={Self} />
           </button>
           <nav
             ref={dropdownRef}

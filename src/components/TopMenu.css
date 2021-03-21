@@ -75,5 +75,8 @@
       }
     
     .menu-trigger img {
-        /* border-radius: 90px; */
+        margin: 0 0 -2px 0;
+        border-radius: 90px;
+        height: 1rem;
+        width: 1rem;
       }

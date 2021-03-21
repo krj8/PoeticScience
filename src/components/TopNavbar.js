@@ -21,8 +21,7 @@ export default function TopNavbar() {
                 <img className='logo' src={Logo} alt='Ada Logo'/>
             </Link>
             <Link to='/' className='navbar-title'>
-                {/* PoeticScience.net */}
-                Hi, Mom & Dad!
+                PoeticScience.net
             </Link>
             <div className='menu-button'>
                 <TopMenu />
