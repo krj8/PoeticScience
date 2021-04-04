@@ -9,3 +9,12 @@
 //         </>
 //     );
 // }
+
+
+
+
+
+// Listens for fragment identifier to change. Loads new content for Single Page App
+window.addEventListener("hashchange", function() {
+    console.log(location.hash);
+});
