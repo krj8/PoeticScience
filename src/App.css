@@ -1,11 +1,61 @@
 /* ToDo: Set mobile version when screen size is smaller than _____ */
 
-* {
+/* App Frame */
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', sans-serif;
 }
+
+body {
+  margin: 0;
+  background-color: rgb(26, 26, 26);
+  overflow: hidden;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./Licensed_Photos/Empty_book.jpg');
+  background-size: 100vw 90vh;
+  background-repeat: no-repeat;
+
+  display: grid;
+  grid-template-columns: 1fr 4.7fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  " . . . . "
+  " . . . . "
+  " leftMenu . . rightMenu ";
+}
+
+.leftMenu {
+  grid-area: leftMenu;
+}
+
+.rightMenu {
+  grid-area: rightMenu;
+} */
+/* App Frame end*/
+
+
+
+
+
+
+
+
+
+/* -------------------------------------- */
+/* ToDo: Set mobile version when screen size is smaller than _____ */
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+} */
 
 /* .ada,
 .babbage,
@@ -37,13 +87,13 @@
 
 /* comment out Command-/ */
 
-body {
+/* body {
   margin: 0;
   background-color: rgb(26, 26, 26);
   overflow: hidden;
-}
+} */
 
-.background {
+/* .background {
   height: 100vh;
   width: 100vw;
   background-image: url('./Licensed_Photos/Empty_book.jpg');
@@ -51,12 +101,6 @@ body {
   background-repeat: no-repeat;
 
   display: grid;
-  /* grid-template-columns: .25fr 1fr 2fr 2fr .1fr 2fr 3fr 1fr .25fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  " . . . . . . . "
-  " . leftMenu . . . . . rightMenu . "; */
-
   grid-template-columns: 1fr 4.7fr 5fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
@@ -67,12 +111,11 @@ body {
 
 .leftMenu {
   grid-area: leftMenu;
-  /* border: 1px solid black; */
 }
 
 .rightMenu {
   grid-area: rightMenu;
-}
+} */
 /* ----------------------------------------------------------- */
 
 
