@@ -1,13 +1,18 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import './Resume.css';
 
 export default function Resume() {
   return (
-    <div className="container">
+    <div>
       <h1>Resume</h1>
-      <p>
-        Lorem ipsum
-      </p>
+      
+      <div className="left_content">
+        <h2>Resume Left Content</h2>
+      </div>
+
+      <div className="right_content">
+        <h2>Resume Right Content</h2>
+      </div>
     </div>
   )
 }

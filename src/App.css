@@ -12,7 +12,6 @@ body {
 }
 
 .app_frame {
-/* .background { */
   height: 100vh;
   width: 100vw;
   background-image: url('./Licensed_Photos/Empty_book.jpg');
@@ -23,9 +22,9 @@ body {
   grid-template-columns: 1fr 4.7fr 5fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-  " . . . . "
-  " . . . . "
-  " left_menu . . right_menu ";
+  " . content content . "
+  " . content content . "
+  " left_menu content content right_menu ";
 }
 
 .left_menu {
@@ -34,6 +33,11 @@ body {
 
 .right_menu {
   grid-area: right_menu;
+}
+
+.content {
+  border: 3px solid black; 
+  grid-area: content;
 }
 
 
@@ -119,92 +123,7 @@ body {
 /* App Frame end*/
 
 
-
-
-
-
-
-
-
-/* -------------------------------------- */
-/* ToDo: Set mobile version when screen size is smaller than _____ */
-
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'PT Sans', sans-serif;
-} */
-
-/* .ada,
-.babbage,
-.about-me {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-
-.babbage {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.about-me {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-} */
-
-/* ------------------------------------------------------------------------------------ */
-
-/* comment out Command-/ */
-
-/* body {
-  margin: 0;
-  background-color: rgb(26, 26, 26);
-  overflow: hidden;
-} */
-
-/* .background {
-  height: 100vh;
-  width: 100vw;
-  background-image: url('./Licensed_Photos/Empty_book.jpg');
-  background-size: 100vw 90vh;
-  background-repeat: no-repeat;
-
-  display: grid;
-  grid-template-columns: 1fr 4.7fr 5fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-  " . . . . "
-  " . . . . "
-  " leftMenu . . rightMenu ";
-}
-
-.leftMenu {
-  grid-area: leftMenu;
-}
-
-.rightMenu {
-  grid-area: rightMenu;
-} */
-/* ----------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
+/* -------------------------------------- *
 /* .grid {
   height: 100vh;
   width: 100%;

@@ -1,13 +1,18 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import './Home.css';
 
 export default function HomePage() {
   return (
-    <div className="container">
-      <h1>Poetic Science</h1>
-      <p>
-        Lorem ipsum
-      </p>
+    <div>
+      <h1>Home Page</h1>
+      
+      <div className="left_content">
+        <h2>Home Page Left Content</h2>
+      </div>
+
+      <div className="right_content">
+        <h2>Home Page Right Content</h2>
+      </div>
     </div>
   )
 }

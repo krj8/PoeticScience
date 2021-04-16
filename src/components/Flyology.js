@@ -1,13 +1,18 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import './Flyology.css';
 
 export default function Flyology() {
   return (
-    <div className="container">
+    <div>
       <h1>Flyology</h1>
-      <p>
-        Lorem ipsum
-      </p>
+      
+      <div className="left_content">
+        <h2>Flyology Left Content</h2>
+      </div>
+
+      <div className="right_content">
+        <h2>Flyology Right Content</h2>
+      </div>
     </div>
   )
 }

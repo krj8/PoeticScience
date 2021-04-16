@@ -1,5 +1,7 @@
 import React from 'react';
 import { Route, Switch, NavLink } from 'react-router-dom';
+import './App.css';
+
 import HomePage from './components/Home.js';
 import FrontCover from './components/FrontCover.js';
 import Flyology from './components/Flyology.js';
@@ -7,7 +9,9 @@ import Resume from './components/Resume.js';
 import Portfolio from './components/Portfolio.js';
 import Babbage from './components/Babbage.js';
 import BackCover from './components/BackCover.js';
-import TopMenu from './components/TopMenu.jsx';
+
+// import TopMenu from './components/TopMenu.jsx';
+import TopNavbar from './components/TopNavbar.js';
 
 
 export default function App() {
@@ -23,7 +27,8 @@ export default function App() {
           <h1>PoeticScience.net</h1>
           
           <div className='menu-button'>
-            <TopMenu />
+            <TopNavbar />
+            {/* <TopMenu /> */}
               {/* <ul className="top_menu">
                 <li><NavLink to="/about_me/resume">Resume</NavLink></li>
                 <div className='line'></div>
@@ -54,32 +59,10 @@ export default function App() {
           <Route path="/flyology" component={Flyology} />
           <Route path="/babbage" component={Babbage} />
           <Route path="/outro" component={BackCover} />
-
-          {/* <div id="left_content" />
-          <div id="right_content" /> */}
         </div>
     </Switch>
   )
 }
-
-
-// ------------------------------
-// import React from 'react';
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-// Use AppFrame as environment/background
-// import AppFrame from './AppFrame.js';
-// import Home from './components/Home/Home.js';
-
-// export default function App() {
-//   return (
-//     <Router>
-//       <Switch>
-//         <Route path="/" exact component={Home} />
-//       </Switch>
-//     </Router>
-//   );
-// }
 
 // ----------------------
 // import {
@@ -117,16 +100,6 @@ export default function App() {
 // }
 
 // export default Main;
-
-
-
-
-
-
-
-
-
-
 
 // ---------------------------------
 // import React, { Component } from 'react';
@@ -172,14 +145,7 @@ export default function App() {
 
 // export default Main;
 
-
-
-
-
-
-
-
-
+// ---------------------------------
 // import React from 'react';
 // import TopNavbar from './components/TopNavbar';
 // // import Contents from './components/Contents.js';

@@ -1,13 +1,18 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import './Portfolio.css';
 
 export default function Portfolio() {
   return (
-    <div className="container">
+    <div>
       <h1>Portfolio</h1>
-      <p>
-        Lorem ipsum
-      </p>
+      
+      <div className="left_content">
+        <h2>Portfolio Left Content</h2>
+      </div>
+
+      <div className="right_content">
+        <h2>Portfolio Right Content</h2>
+      </div>
     </div>
   )
 }
