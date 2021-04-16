@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     background: rgb(26, 26, 26);
     height: 80px;
     width: auto;
@@ -9,10 +9,9 @@
     grid-template-areas: 
         "logo title menu"
         "logo . .";
-    /* position: sticky; */
-  }
+  } */
 
-  .navbar-title {
+  /* .navbar-title {
       color: #fff;
       cursor: pointer;
       text-decoration: none;
@@ -21,9 +20,9 @@
       justify-content: center;
       align-items: center;
       grid-area: title;
-  }
+  } */
 
-  .logo {
+  /* .logo {
     display: flex;
     grid-area: logo;
     padding: 0 0 0 20px;
@@ -35,4 +34,4 @@
     align-items: center;
     grid-area: menu;
     padding: 0 20px;
-  }
+  } */

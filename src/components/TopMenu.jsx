@@ -1,6 +1,7 @@
 // ToDo: Keep 'About Me' from going to two lines when window size decreases
 
 import React, { useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 import './TopMenu.css';
 import { useDetectOutsideClick } from './useDetectOutsideClick.js';
 import Self from '/Users/kindrajonson/Desktop/PoeticScience/website_files/React/poetic_science/src/Licensed_Photos/123.jpg';
@@ -21,6 +22,11 @@ export default function TopMenu() {
             className={`menu ${isActive ? "active" : "inactive"}`}
           >
             <ul>
+              <li><NavLink to="/about_me/resume">Resume</NavLink></li>
+              <div className='line'></div>
+              <li><NavLink to="/about_me/portfolio">Portfolio</NavLink></li>
+            </ul>
+            {/* <ul>
               <li>
                 <a href="/portfolio">Portfolio</a>
               </li>
@@ -28,7 +34,7 @@ export default function TopMenu() {
               <li>
                 <a href="/resume">Resume</a>
               </li>
-            </ul>
+            </ul> */}
           </nav>
         </div>
   );
