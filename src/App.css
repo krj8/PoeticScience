@@ -22,9 +22,9 @@ body {
   grid-template-columns: 1fr 4.7fr 5fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-  " . content content . "
-  " . content content . "
-  " left_menu content content right_menu ";
+  " . . . . "
+  " . . . . "
+  " left_menu . . right_menu ";
 }
 
 .left_menu {
@@ -41,7 +41,7 @@ body {
 }
 
 
-.header {
+/* .header {
   background: rgb(26, 26, 26);
   height: 80px;
   width: auto;
@@ -52,15 +52,15 @@ body {
   grid-template-areas: 
       "logo title menu"
       "logo . .";
-}
+} */
 
-.logo {
+/* .logo {
   display: flex;
   grid-area: logo;
   padding: 0 0 0 20px;
-  }
+  } */
 
-.h1 {
+/* .h1 {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
@@ -69,15 +69,15 @@ body {
     justify-content: center;
     align-items: center;
     grid-area: title;
-}
+} */
 
-.menu-button {
+/* .menu-button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   grid-area: menu;
   padding: 0 20px;
-}
+} */
 
 
 

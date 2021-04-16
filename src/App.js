@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import HomePage from './components/Home.js';
@@ -10,45 +10,34 @@ import Portfolio from './components/Portfolio.js';
 import Babbage from './components/Babbage.js';
 import BackCover from './components/BackCover.js';
 
-// import TopMenu from './components/TopMenu.jsx';
 import TopNavbar from './components/TopNavbar.js';
+import LeftMenu from './components/LeftMenu.jsx';
+import RightMenu from './components/RightMenu.jsx';
 
 
 export default function App() {
   return(
     <Switch>
-      {/* <div className="background"> */}
       <div className="app_frame">
+        <TopNavbar />
         
-        <div className="header">  {/* Transferred from TopNavbar.js & TopNavbar.css & TopMenu.jsx */}
-          {/* Ada emblem */}
-          <NavLink exact to="/"><image id="logo" src="./Licensed_Photos/logo.png" alt="Home"/></NavLink>
-          
-          <h1>PoeticScience.net</h1>
-          
-          <div className='menu-button'>
-            <TopNavbar />
-            {/* <TopMenu /> */}
-              {/* <ul className="top_menu">
-                <li><NavLink to="/about_me/resume">Resume</NavLink></li>
-                <div className='line'></div>
-                <li><NavLink to="/about_me/portfolio">Portfolio</NavLink></li>
-              </ul> */}
-            {/* </TopMenu> */}
-          </div>
+        <div className="left_menu">
+          <LeftMenu />
         </div>
 
-        {/* <div className="app_frame"> */}
-          <ul className="left_menu">
+        <div className="right_menu">
+          <RightMenu />
+        </div>
+          {/* <ul className="left_menu">
             <li><NavLink exact to="/intro">Front Cover</NavLink></li>
             <li><NavLink to="/flyology">Flyology</NavLink></li>
-          </ul>
+          </ul> */}
       
-          <ul className="right_menu">
+          {/* <ul className="right_menu">
             <li><NavLink to="/babbage">Babbage</NavLink></li>
             <li><NavLink to="/outro">Back Cover</NavLink></li>
-          </ul>
-        </div>
+          </ul> */}
+      </div>
 
         <div className="content">
         {/* when url path is ____ render _____ component */}
@@ -59,7 +48,7 @@ export default function App() {
           <Route path="/flyology" component={Flyology} />
           <Route path="/babbage" component={Babbage} />
           <Route path="/outro" component={BackCover} />
-        </div>
+      </div>
     </Switch>
   )
 }
