@@ -1,4 +1,23 @@
 body {
+/* .app_frame { */
+  height: 100vh;
+  width: 100vw;
+  /* background-image: url('./Licensed_Photos/Empty_book.jpg'); */
+  background-color: cornflowerblue;
+  background-size: 100vw 90vh;
+  background-repeat: no-repeat;
+  /* z-index: 0; */
+
+  display: grid;
+  grid-template-columns: 1fr 4.7fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  " . lc rc . "
+  " . lc rc . "
+  " . lc rc . ";
+}
+
+/* body {
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -8,7 +27,8 @@ body {
   " . . . . "
   " . lc rc . "
   " . lc rc . ";
-}
+  z-index: 1;
+} */
 
 .left_content {
     border: 5px solid blue;

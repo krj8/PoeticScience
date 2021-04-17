@@ -3,6 +3,7 @@ import './Portfolio.css';
 
 export default function Portfolio() {
   return (
+    // <div className="app_frame">
     <body>
       <h1>Portfolio</h1>
       
@@ -14,5 +15,6 @@ export default function Portfolio() {
         <h2>Portfolio Right Content</h2>
       </div>
     </body>
+    // </div>
   )
 }
