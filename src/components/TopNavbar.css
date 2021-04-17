@@ -1,37 +1,37 @@
 .navbar {
-    background: rgb(26, 26, 26);
-    height: 80px;
-    width: auto;
-    display: grid;
-    grid-area: tnb;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 80px 80px;
-    grid-template-areas: 
-        "logo title menu"
-        "logo . .";
-  }
+  background: rgb(26, 26, 26);
+  height: 80px;
+  width: auto;
+  display: grid;
+  /* grid-area: tnb; */
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 80px 80px;
+  grid-template-areas: 
+      "logo title menu"
+      "logo . .";
+}
 
-  .navbar-title {
-      color: #fff;
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      grid-area: title;
-  }
-
-  .logo {
+.navbar-title {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
     display: flex;
-    grid-area: logo;
-    padding: 0 0 0 20px;
-    }
-
-  .menu-button {
-    display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    grid-area: menu;
-    padding: 0 20px;
+    grid-area: title;
+}
+
+.logo {
+  display: flex;
+  grid-area: logo;
+  padding: 0 0 0 20px;
   }
+
+.menu-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: menu;
+  padding: 0 20px;
+}

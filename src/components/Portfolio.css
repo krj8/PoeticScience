@@ -1,7 +1,23 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 4.7fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  " . . . . "
+  " . lc rc . "
+  " . lc rc . ";
+}
+
 .left_content {
     border: 5px solid blue;
+    grid-area: lc;
+    /* z-index: -1; */
   }
   
-  .right_content {
-    border: 5px solid yellow;
-  }
+.right_content {
+  background-color: cornflowerblue;
+  grid-area: rc;
+  /* z-index: -1; */
+}

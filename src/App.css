@@ -17,6 +17,7 @@ body {
   background-image: url('./Licensed_Photos/Empty_book.jpg');
   background-size: 100vw 90vh;
   background-repeat: no-repeat;
+  /* z-index: 0; */
 
   display: grid;
   grid-template-columns: 1fr 4.7fr 5fr 1fr;
@@ -35,10 +36,10 @@ body {
   grid-area: right_menu;
 }
 
-.content {
+/* .content {
   border: 3px solid black; 
   grid-area: content;
-}
+} */
 
 
 /* .header {
@@ -123,15 +124,15 @@ body {
 /* App Frame end*/
 
 
-/* -------------------------------------- *
+/* -------------------------------------- */
 /* .grid {
   height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: .2fr .2fr .2fr .2fr .2fr 3fr 3fr .2fr .2fr .2fr .2fr .2fr .2fr;
   grid-template-rows: .2fr 1fr 1fr 1fr .2fr .2fr;
-  grid-template-areas:  */
-  /* " tnb tnb tnb tnb tnb tnb tnb tnb tnb tnb tnb tnb tnb "
+  grid-template-areas: 
+  " tnb tnb tnb tnb tnb tnb tnb tnb tnb tnb tnb tnb tnb "
   " . . . . . . . . . . . . .  "
   " . . . . . . . . . . . . .  "
   " . . . . . . . . . . . . .  "

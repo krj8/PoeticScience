@@ -3,7 +3,7 @@ import './Portfolio.css';
 
 export default function Portfolio() {
   return (
-    <div>
+    <body>
       <h1>Portfolio</h1>
       
       <div className="left_content">
@@ -13,6 +13,6 @@ export default function Portfolio() {
       <div className="right_content">
         <h2>Portfolio Right Content</h2>
       </div>
-    </div>
+    </body>
   )
 }
