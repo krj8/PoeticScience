@@ -29,6 +29,12 @@ export default function App() {
             <LeftMenu />
           </div>
 
+
+
+
+
+          
+
           <div className="right_menu">
             <RightMenu />
           </div>
