@@ -1,6 +1,11 @@
 import React, { useRef } from 'react';
+import { Route } from 'react-router-dom';
+// import { Switch } from 'react-router-dom';}
 import './LeftMenu.css';
 import { useDetectOutsideClick } from './useDetectOutsideClick.js';
+
+import FrontCover from '/Users/kindrajonson/Desktop/PoeticScience/website_files/React/poetic_science/src/components/FrontCover.js';
+import Flyology from '/Users/kindrajonson/Desktop/PoeticScience/website_files/React/poetic_science/src/components/Flyology.js';
 
 export default function LeftMenu() {
   const dropdownRef = useRef(null);
@@ -19,15 +24,24 @@ export default function LeftMenu() {
             ref={dropdownRef}
             className={`left-menu ${isActive ? "active" : "inactive"}`}
           >
+          {/* <Switch> */}
             <ul>
               <li>
+                {/* <NavLink to="/flyology">Flyology</NavLink> */}
                 <a href="/flyology">Flyology</a>
               </li>
-              <div className='left-line'></div>
+                <div className='left-line'></div>
               <li>
-                <a href="/front_cover">Front Cover</a>
+                {/* <NavLink exact to="/intro">Front Cover</NavLink> */}
+                <a href="/intro">Front Cover</a>
               </li>
             </ul>
+
+          {/* <div className="content">
+            <Route path="/intro" component={FrontCover} />
+            <Route path="/flyology" component={Flyology} />
+          </div> */}
+          {/* </Switch> */}
           </nav>
         </div>
   );

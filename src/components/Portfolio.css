@@ -2,7 +2,7 @@ body {
 /* .app_frame { */
   height: 100vh;
   width: 100vw;
-  background-image: url('./Licensed_Photos/Empty_book.jpg'); 
+  background-image: url('/Users/kindrajonson/Desktop/PoeticScience/website_files/React/poetic_science/src/Licensed_Photos/Empty_book.jpg'); 
   background-size: 100vw 90vh;
   background-repeat: no-repeat;
 

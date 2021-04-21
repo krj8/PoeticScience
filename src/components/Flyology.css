@@ -1,11 +1,67 @@
+body {
+  /* .app_frame { */
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/Users/kindrajonson/Desktop/PoeticScience/website_files/React/poetic_science/src/Licensed_Photos/Empty_book.jpg'); 
+    background-size: 100vw 90vh;
+    background-repeat: no-repeat;
+  
+    display: grid;
+    grid-template-columns: 1fr 4.7fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    " . lc rc . "
+    " . lc rc . "
+    " . lc rc . ";
+  }
+  
+  /* body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 4.7fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    " . . . . "
+    " . lc rc . "
+    " . lc rc . ";
+    z-index: 1;
+  } */
+  
+  .left_content {
+      border: 5px solid blue;
+      grid-area: lc;
+      /* z-index: -1; */
+    }
+    
+  .right_content {
+    background-color: cornflowerblue;
+    grid-area: rc;
+    /* z-index: -1; */
+  }
+
+/* body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/Users/kindrajonson/Desktop/PoeticScience/website_files/React/poetic_science/src/Licensed_Photos/Empty_book.jpg'); 
+    background-size: 100vw 90vh;
+    background-repeat: no-repeat;
+  
+    display: grid;
+    grid-template-columns: 1fr 4.7fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    " . lc rc . "
+    " . lc rc . "
+    " . lc rc . ";
+  }
+
 .left_content {
-  /* border: 5px solid blue; */
   background-color: cornflowerblue;
-  z-index: 1;
+  grid-area: lc;
   }
   
 .right_content {
-  /* border: 5px solid yellow; */
   background-color: cornflowerblue;
-  z-index: 1;
-}
+  grid-area: rc;
+} */

@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/concinnate/public_html/
-    - /bin/cp -R * $DEPLOYPATH
-    

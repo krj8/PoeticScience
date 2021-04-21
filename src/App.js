@@ -20,9 +20,10 @@ export default function App() {
   return(
     // <Switch>
       <body>
+        {/* app frame */}
         <div>
-          <TopNavbar />
-          <div className="app_frame">
+            <TopNavbar />
+            <div className="background">
 
           <div className="left_menu">
             <LeftMenu />
@@ -31,6 +32,7 @@ export default function App() {
           <div className="right_menu">
             <RightMenu />
           </div>
+
             {/* <ul className="left_menu">
               <li><NavLink exact to="/intro">Front Cover</NavLink></li>
               <li><NavLink to="/flyology">Flyology</NavLink></li>

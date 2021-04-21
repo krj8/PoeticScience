@@ -3,7 +3,7 @@ import './Flyology.css';
 
 export default function Flyology() {
   return (
-    <div>
+    <body>
       <h1>Flyology</h1>
       
       <div className="left_content">
@@ -13,6 +13,6 @@ export default function Flyology() {
       <div className="right_content">
         <h2>Flyology Right Content</h2>
       </div>
-    </div>
+    </body>
   )
 }
