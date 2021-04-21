@@ -1,3 +1,4 @@
+// Menu/s don't close when RightMenu option is clicked
 // All menus click in unison
 // Page doesn't stop loading
 
@@ -75,7 +76,7 @@ export default function App2() {
                   <ul>
                     <li><NavLink to="/flyology">Flyology</NavLink></li>
                       <div className='left-line'></div>
-                    <li><NavLink exact to="/intro">Front Cover</NavLink></li>
+                    <li><NavLink to="/intro">Front Cover</NavLink></li>
                   </ul>
                 </nav>
               </div>
