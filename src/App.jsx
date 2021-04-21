@@ -1,8 +1,8 @@
-// Add hole app frame and menus to App.jsx page, including Switch
+// Add whole app frame and menus to App.jsx page, including Switch
 
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.css';
+import './App2.css';
 
 import HomePage from './components/Home.js';
 import FrontCover from './components/FrontCover.js';
@@ -12,27 +12,23 @@ import Portfolio from './components/Portfolio.js';
 import Babbage from './components/Babbage.js';
 import BackCover from './components/BackCover.js';
 
-import TopNavbar from './components/TopNavbar.js';
-import LeftMenu from './components/LeftMenu.jsx';
-import RightMenu from './components/RightMenu.jsx';
-
 
 export default function App() {
   return(
     <Switch>
       <body>
-        {/* app frame */}
         <div>
-            <TopNavbar />
-            <div className="background">
+            {/* TopNavbar */}
 
-          <div className="left_menu">
-            <LeftMenu />
-          </div>
 
-          <div className="right_menu">
-            <RightMenu />
-          </div>
+
+
+
+            {/* Background */}
+
+            {/* LeftMenu */}
+
+            {/* Right Menu */}
 
             {/* <ul className="left_menu">
               <li><NavLink exact to="/intro">Front Cover</NavLink></li>
