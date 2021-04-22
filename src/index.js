@@ -1,11 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import App2 from './App2.jsx';
+import App from './App.js';
+// import Portfolio from './components/Portfolio.js';
 
 render(
     <BrowserRouter>
-        <App2 />
+        <App />
+        {/* <Portfolio /> */}
     </BrowserRouter>,
     document.querySelector('#root')
 );

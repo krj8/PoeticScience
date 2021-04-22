@@ -3,7 +3,8 @@
 // Page doesn't stop loading
 
 import React, { useRef } from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
+// import { Route, Switch, NavLink } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import './App2.css';
 
 // TopNavBar
@@ -36,8 +37,8 @@ export default function App2() {
         <div>
           {/* TopNavbar */}
           <nav className='TopNavBar'>
-            <NavLink to='/'><img className='logo' src={Logo} alt='Ada Logo'/></NavLink>
-            <NavLink to='/' className='navbar-title'>PoeticScience.net</NavLink>
+            <Link to='/'><img className='logo' src={Logo} alt='Ada Logo'/></Link>
+            <Link to='/' className='navbar-title'>PoeticScience.net</Link>
           
             {/* TopMenu */}
             <div className='MenuButton'>
@@ -50,9 +51,9 @@ export default function App2() {
 
                 <nav ref={dropdownRef} className={`menu ${isActive ? "active" : "inactive"}`}>
                   <ul>
-                    <li><NavLink to="/about_me/resume">Resume</NavLink></li>
+                    <li><Link to="/about_me/resume">Resume</Link></li>
                       <div className='line'></div>
-                    <li><NavLink to="/about_me/portfolio">Portfolio</NavLink></li>
+                    <li><Link to="/about_me/portfolio">Portfolio</Link></li>
                   </ul>
                 </nav>
               </div>
@@ -74,9 +75,9 @@ export default function App2() {
               
                 <nav ref={dropdownRef} className={`left-menu ${isActive ? "active" : "inactive"}`}>
                   <ul>
-                    <li><NavLink to="/flyology">Flyology</NavLink></li>
+                    <li><Link to="/flyology">Flyology</Link></li>
                       <div className='left-line'></div>
-                    <li><NavLink to="/intro">Front Cover</NavLink></li>
+                    <li><Link to="/intro">Front Cover</Link></li>
                   </ul>
                 </nav>
               </div>
@@ -93,9 +94,9 @@ export default function App2() {
 
                 <nav ref={dropdownRef} className={`right-menu ${isActive ? "active" : "inactive"}`}>
                   <ul>
-                    <li><NavLink to="/babbage">Babbage</NavLink></li>
+                    <li><Link to="/babbage">Babbage</Link></li>
                       <div className='right-line'></div>
-                    <li><NavLink to="/outro">Back Cover</NavLink></li>
+                    <li><Link to="/outro">Back Cover</Link></li>
                   </ul>
                 </nav>
               </div>
