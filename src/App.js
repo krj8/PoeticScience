@@ -1,3 +1,6 @@
+// ToDo: Why do the menues stay open as soon as I start working on them? How I fixed it for TopMenu won't work for LeftMenu and RightMenu 
+// Keep 'About Me' from going to two lines when window size decreases
+
 import React from 'react';
 // import { Route } from 'react-router-dom';
 // import { Switch } from 'react-router-dom';
@@ -18,7 +21,6 @@ import RightMenu from './components/RightMenu.jsx';
 
 export default function App() {
   return(
-    // <Switch>
       <body>
         {/* app frame */}
         <div>

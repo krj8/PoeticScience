@@ -1,5 +1,3 @@
-// ToDo: Keep 'About Me' from going to two lines when window size decreases
-
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './TopMenu.css';
@@ -16,22 +14,15 @@ export default function TopMenu() {
           <button onClick={onClick} className="menu-trigger">
             <span>About Me</span>
             <img src={Self} alt='self'/>
-          </button>
 
-          <nav ref={dropdownRef} className={`menu ${isActive ? "active" : "inactive"}`}>
-            <ul>
-              <li><Link to="/about_me/resume">Resume</Link></li>
-              {/* <li><a href="/resume">Resume</a></li> */}
-              <div className='line'></div>
-              {/* <li><Link to="/about_me/portfolio">Portfolio</Link></li> */}
-              <li><a href="/portfolio">Portfolio</a></li>
-            </ul>
-            {/* <ul>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <div className='line'></div>
-              <li><a href="/resume">Resume</a></li>
-            </ul> */}
-          </nav>
+            <nav ref={dropdownRef} className={`menu ${isActive ? "active" : "inactive"}`}>
+              <ul>
+                <li><Link to="/about_me/resume">Resume</Link></li>
+                <div className='line'></div>
+                <li><Link to="/about_me/portfolio">Portfolio</Link></li>
+              </ul>
+            </nav>
+          </button>
         </div>
   );
 }
