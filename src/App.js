@@ -1,18 +1,23 @@
-// ToDo: Why do the menues stay open as soon as I start working on them? How I fixed it for TopMenu won't work for LeftMenu and RightMenu 
-// Keep 'About Me' from going to two lines when window size decreases
+//  ToDo:
+//  Keep 'About Me' from going to two lines when window size decreases
+
+//  Notes:
+//  When I had all menu functions defined in App.js, all menus opened and closed as one
+//  LeftMenu and RightMenu links are 'href.' Menus don't close after clicked with Link and NavLink. But with href, page change is too abrupt for menu closing action to be seen
+//  Switch not used
 
 import React from 'react';
-// import { Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 // import { Switch } from 'react-router-dom';
 import './App.css';
 
-// import HomePage from './components/Home.js';
-// import FrontCover from './components/FrontCover.js';
-// import Flyology from './components/Flyology.js';
-// import Resume from './components/Resume.js';
-// import Portfolio from './components/Portfolio.js';
-// import Babbage from './components/Babbage.js';
-// import BackCover from './components/BackCover.js';
+import HomePage from './components/Home.js';
+import FrontCover from './components/FrontCover.js';
+import Flyology from './components/Flyology.js';
+import Resume from './components/Resume.js';
+import Portfolio from './components/Portfolio.js';
+import Babbage from './components/Babbage.js';
+import BackCover from './components/BackCover.js';
 
 import TopNavbar from './components/TopNavbar.js';
 import LeftMenu from './components/LeftMenu.jsx';
@@ -31,16 +36,16 @@ export default function App() {
           </div>
         </div>
 
-        {/* <div className="content"> */}
+        <div className="content">
         {/* when url path is ____ render _____ component */}
-          {/* <Route exact path="/" component={HomePage} />
+          <Route exact path="/" component={HomePage} />
           <Route path="/about_me/resume" component={Resume} />
           <Route path="/about_me/portfolio" component={Portfolio} />
           <Route path="/intro" component={FrontCover} />
           <Route path="/flyology" component={Flyology} />
           <Route path="/babbage" component={Babbage} />
           <Route path="/outro" component={BackCover} />
-        </div> */}
+        </div>
       </body> 
     // </Switch>
   )

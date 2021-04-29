@@ -1,8 +1,10 @@
 .left_content {
+  grid-area: lc; /* connects to App.css content grid*/
   border: 5px solid blue;
 }
-
+  
 .right_content {
+  grid-area: rc; /* connects to App.css content grid*/
   border: 5px solid yellow;
 }
 

@@ -3,7 +3,7 @@ import './Home.css';
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="content">
       <h1>Home Page</h1>
       
       <div className="left_content">

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 // import { Route } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 // import { Switch } from 'react-router-dom';
 import './LeftMenu.css';
 import { useDetectOutsideClick } from './useDetectOutsideClick.js';
@@ -15,7 +15,6 @@ export default function LeftMenu() {
   const onClick = () => setIsActive(!isActive);
 
   return (
-    <Switch>
           <div className="left-menu-container">
             <div onClick={onClick} className='left-ribbon'>
               <div className='left-menu-trigger'>
@@ -25,9 +24,9 @@ export default function LeftMenu() {
           
             <nav ref={dropdownRef} className={`left-menu ${isActive ? "active" : "inactive"}`}>
               <ul>
-                <li><Link to="/flyology">Flyology</Link></li>
+                <li><a href="/flyology">Flyology</a></li>
                 <div className='left-line'></div>
-                <li><Link exact to="/intro">Front Cover</Link></li>
+                <li><a href="/intro">Front Cover</a></li>
               </ul>
 
           {/* <div className="content">
@@ -37,6 +36,6 @@ export default function LeftMenu() {
           {/* </Switch> */}
           </nav>
         </div>
-        </Switch>
+        // </Switch>
   );
 }

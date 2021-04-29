@@ -1,7 +1,6 @@
-// ToDo: Turn around/mirror 'Next Chapters' right menu
+// ToDo:
 // Make Previous & Next Chapters menus work
 // Attach ChapterMenus to page, so move correctly when window is resized
-
 
 
 import React, { useRef } from 'react';
@@ -24,18 +23,11 @@ export default function RightMenu() {
               </div>
             </div>
 
-          <nav
-            ref={dropdownRef}
-            className={`right-menu ${isActive ? "active" : "inactive"}`}
-          >
+          <nav ref={dropdownRef} className={`right-menu ${isActive ? "active" : "inactive"}`}>
             <ul>
-              <li>
-                <a href="/babbage">Babbage</a>
-              </li>
+              <li><a href="/babbage">Babbage</a></li>
               <div className='right-line'></div>
-              <li>
-                <a href="/back_cover">Back Cover</a>
-              </li>
+              <li><a href="/back_cover">Back Cover</a></li>
             </ul>
           </nav>
         </div>
